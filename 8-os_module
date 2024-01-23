@@ -1,0 +1,19 @@
+//accessing built in modules 
+// for example we are now going to access the os module
+const os = require('os')
+//done
+
+//lets access stuff frm there
+
+const user = os.userInfo()
+console.log(user)
+
+//sytem uptime
+console.log(`the system uptime is ${os.uptime()/60} minutes`)
+
+const currentOs = {
+    name : os.type(),
+    totalMem : os.totalmem(),
+    freemem: os.freemem(),
+}
+console.log(currentOs)

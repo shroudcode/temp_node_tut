@@ -1,0 +1,11 @@
+const path = require('path')
+
+console.log(path.sep)
+const pathname = path.join('./content','subfolder')
+console.log(pathname)
+
+const newpath = path.basename(pathname)
+console.log(newpath)
+
+const absolute_path = path.resolve(__dirname, 'content')
+console.log(absolute_path )
